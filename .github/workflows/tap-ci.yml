@@ -8,5 +8,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: Homebrew/actions/setup-homebrew@master
-      - run: brew test-bot --only-tap-syntax
+      - name: brew test-bot (tap syntax; brew is preinstalled on macOS runners)
+        run: |
+          brew --version
+          brew test-bot --only-tap-syntax
