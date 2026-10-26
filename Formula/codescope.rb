@@ -27,7 +27,7 @@ class Codescope < Formula
   end
 
   def install
-    binary = Dir["**/codescope"].first
+    binary = Dir["**/codescope"].find { |f| File.file?(f) }
     odie "codescope binary not found in archive" if binary.nil?
     bin.install binary => "codescope"
   end
