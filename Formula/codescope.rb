@@ -1,7 +1,6 @@
 class Codescope < Formula
   desc "Single-binary code intelligence for AI coding agents (MCP / CLI / JSON)"
   homepage "https://github.com/adventurewave-labs/codescope"
-  version "0.3.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
