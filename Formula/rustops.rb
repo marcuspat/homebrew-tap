@@ -5,6 +5,10 @@ class Rustops < Formula
   sha256 "a390775b20ef7fb47f5468b89affc5ee194a40323d0e2d424272308fa9d535a4"
   license "Apache-2.0"
 
+  on_linux do
+    depends_on "openssl@3"
+  end
+
   depends_on "rust" => :build
 
   def install
@@ -12,6 +16,6 @@ class Rustops < Formula
   end
 
   test do
-    assert_predicate bin/"rustops", :executable?, "rustops binary must be executable"
+    assert_match version.to_s, shell_output("#{bin}/rustops --version")
   end
 end

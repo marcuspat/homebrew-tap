@@ -5,6 +5,9 @@ class Netrain < Formula
   sha256 "b2822067d6864b68d5e6ff8a8737de479ad63609f9ad35769037ad0a6c75ea2f"
   license "MIT"
 
+  on_linux do
+    depends_on "libpcap"
+  end
   depends_on "rust" => :build
 
   def install
@@ -12,6 +15,6 @@ class Netrain < Formula
   end
 
   test do
-    assert_predicate bin/"netrain", :executable?, "netrain binary must be executable"
+    assert_match version.to_s, shell_output("#{bin}/netrain --version")
   end
 end

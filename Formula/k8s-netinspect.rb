@@ -12,6 +12,6 @@ class K8sNetinspect < Formula
   end
 
   test do
-    assert_predicate bin/"k8s-netinspect", :executable?, "k8s-netinspect binary must be executable"
+    assert_match version.to_s, shell_output("#{bin}/k8s-netinspect --version")
   end
 end

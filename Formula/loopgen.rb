@@ -12,6 +12,6 @@ class Loopgen < Formula
   end
 
   test do
-    assert_predicate bin/"loopgen", :executable?, "loopgen binary must be executable"
+    assert_match version.to_s, shell_output("#{bin}/loopgen --version")
   end
 end

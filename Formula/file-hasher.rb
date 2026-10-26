@@ -12,6 +12,6 @@ class FileHasher < Formula
   end
 
   test do
-    assert_predicate bin/"file-hasher", :executable?, "file-hasher binary must be executable"
+    assert_match version.to_s, shell_output("#{bin}/file-hasher --version")
   end
 end

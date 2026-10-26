@@ -1,0 +1,12 @@
+name: tap-ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  tap-syntax:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Homebrew/actions/setup-homebrew@master
+      - run: brew test-bot --only-tap-syntax

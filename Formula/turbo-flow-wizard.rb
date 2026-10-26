@@ -12,6 +12,6 @@ class TurboFlowWizard < Formula
   end
 
   test do
-    assert_predicate bin/"turbo-flow-wizard", :executable?, "wizard must be executable"
+    assert system("bash", "-n", bin/"turbo-flow-wizard"), "wizard script must be valid bash"
   end
 end

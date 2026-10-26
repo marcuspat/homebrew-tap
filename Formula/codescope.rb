@@ -2,7 +2,7 @@ class Codescope < Formula
   desc "Single-binary code intelligence for AI coding agents (MCP / CLI / JSON)"
   homepage "https://github.com/adventurewave-labs/codescope"
   version "0.3.0"
-  license "MIT OR Apache-2.0"
+  license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     if Hardware::CPU.arm?
@@ -27,12 +27,12 @@ class Codescope < Formula
   end
 
   def install
-    binary = Dir["*/codescope"].first
+    binary = Dir["**/codescope"].first
     odie "codescope binary not found in archive" if binary.nil?
     bin.install binary => "codescope"
   end
 
   test do
-    assert_predicate bin/"codescope", :executable?, "codescope binary must be executable"
+    assert_match version.to_s, shell_output("#{bin}/codescope --version")
   end
 end
