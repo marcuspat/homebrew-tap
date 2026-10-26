@@ -2,7 +2,7 @@ class Sentinel < Formula
   desc "Safe agentic system administration: policy-gated terminal UI and CLI"
   homepage "https://github.com/marcuspat/Sentinel"
   url "https://github.com/marcuspat/Sentinel/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "c1466ec94a42eee6d20553277f03bc7267ec790729e9092c1e9d282b5189d674"
+  sha256 "af3fe09ecc7af4ed19025494b0e692793435e7fec444af45100a337180f55a7f"
   license "MIT"
 
   depends_on "rust" => :build
