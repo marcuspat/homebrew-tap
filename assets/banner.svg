@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="homebrew-tap: Homebrew tap for the marcuspat / adventurewave-labs CLI fleet — 10 formulae: codescope, sentinel, netrain, secretscan, and friends.">
+<title>homebrew-tap</title>
+<defs>
+<radialGradient id="aur1"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.50"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+<radialGradient id="aur2"><stop offset="0" stop-color="#7c3aed" stop-opacity="0.45"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+<radialGradient id="orb"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.9"/><stop offset="0.55" stop-color="#22d3ee" stop-opacity="0.25"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+<linearGradient id="tgrad" x1="0" x2="1"><stop offset="0" stop-color="#d29922"/><stop offset="0.6" stop-color="#ffffff"/><stop offset="1" stop-color="#d29922"/></linearGradient>
+<linearGradient id="beam" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+<linearGradient id="hglow" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#d29922" stop-opacity="0.30"/><stop offset="1" stop-color="#d29922" stop-opacity="0"/></linearGradient>
+<filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="30"/></filter>
+<filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="5"/></filter>
+<filter id="glow2" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect width="1200" height="400" fill="#04060c"/>
+<ellipse cx="250" cy="120" rx="360" ry="190" fill="url(#aur1)" filter="url(#soft)">
+<animateTransform attributeName="transform" type="translate" values="0 0; 70 24; -40 12; 0 0" dur="26s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="960" cy="150" rx="400" ry="210" fill="url(#aur2)" filter="url(#soft)">
+<animateTransform attributeName="transform" type="translate" values="0 0; -60 18; 34 -12; 0 0" dur="32s" repeatCount="indefinite"/>
+</ellipse>
+<g><circle cx="978" cy="207" r="1" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.87s" begin="-1.28s" repeatCount="indefinite"/></circle>
+<circle cx="868" cy="46" r="2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="2.35s" begin="-3.85s" repeatCount="indefinite"/></circle>
+<circle cx="764" cy="96" r="2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.42s" begin="-4.08s" repeatCount="indefinite"/></circle>
+<circle cx="1140" cy="197" r="1" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.28s" begin="-0.00s" repeatCount="indefinite"/></circle>
+<circle cx="407" cy="108" r="1.6" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="2.90s" begin="-3.76s" repeatCount="indefinite"/></circle>
+<circle cx="1155" cy="209" r="1.6" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="2.43s" begin="-1.88s" repeatCount="indefinite"/></circle>
+<circle cx="878" cy="130" r="1" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.22s" begin="-3.45s" repeatCount="indefinite"/></circle>
+<circle cx="441" cy="158" r="1.2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="2.40s" begin="-1.54s" repeatCount="indefinite"/></circle>
+<circle cx="1068" cy="199" r="2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="2.43s" begin="-3.63s" repeatCount="indefinite"/></circle>
+<circle cx="868" cy="39" r="1" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="4.04s" begin="-3.32s" repeatCount="indefinite"/></circle>
+<circle cx="457" cy="128" r="2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.98s" begin="-3.24s" repeatCount="indefinite"/></circle>
+<circle cx="816" cy="189" r="1.2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="4.08s" begin="-2.50s" repeatCount="indefinite"/></circle>
+<circle cx="870" cy="134" r="2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.21s" begin="-4.25s" repeatCount="indefinite"/></circle>
+<circle cx="807" cy="106" r="1" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.68s" begin="-0.76s" repeatCount="indefinite"/></circle>
+<circle cx="93" cy="105" r="1" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="4.06s" begin="-1.41s" repeatCount="indefinite"/></circle>
+<circle cx="954" cy="174" r="1.2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.81s" begin="-4.25s" repeatCount="indefinite"/></circle>
+<circle cx="763" cy="103" r="2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="2.87s" begin="-3.25s" repeatCount="indefinite"/></circle>
+<circle cx="342" cy="54" r="1.6" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="4.18s" begin="-0.33s" repeatCount="indefinite"/></circle>
+<circle cx="343" cy="132" r="2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.32s" begin="-2.31s" repeatCount="indefinite"/></circle>
+<circle cx="85" cy="205" r="1.2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.70s" begin="-0.67s" repeatCount="indefinite"/></circle>
+<circle cx="759" cy="91" r="2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="2.87s" begin="-0.66s" repeatCount="indefinite"/></circle>
+<circle cx="63" cy="201" r="1.6" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="4.28s" begin="-2.68s" repeatCount="indefinite"/></circle>
+<circle cx="425" cy="25" r="1.6" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="4.50s" begin="-1.34s" repeatCount="indefinite"/></circle>
+<circle cx="464" cy="170" r="1.2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.30s" begin="-3.41s" repeatCount="indefinite"/></circle>
+<circle cx="1056" cy="115" r="1.6" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="3.65s" begin="-2.94s" repeatCount="indefinite"/></circle>
+<circle cx="1084" cy="32" r="2" fill="#dbe7ff"><animate attributeName="opacity" values="0.08;0.85;0.08" dur="4.13s" begin="-4.18s" repeatCount="indefinite"/></circle></g>
+<rect x="0" y="236" width="1200" height="130" fill="url(#hglow)">
+<animate attributeName="opacity" values="0.45;0.9;0.45" dur="7s" repeatCount="indefinite"/>
+</rect>
+<circle cx="600" cy="242" r="90" fill="url(#orb)">
+<animate attributeName="r" values="78;110;78" dur="6s" repeatCount="indefinite"/>
+</circle>
+<path d="M600 240 L-150 400 M600 240 L0 400 M600 240 L150 400 M600 240 L300 400 M600 240 L450 400 M600 240 L600 400 M600 240 L750 400 M600 240 L900 400 M600 240 L1050 400 M600 240 L1200 400 M600 240 L1350 400" stroke="#155e75" stroke-width="1.3" opacity="0.55" fill="none" stroke-dasharray="12 16">
+<animate attributeName="stroke-dashoffset" values="0;-56" dur="0.9s" repeatCount="indefinite"/>
+</path>
+<path d="M0 252 H1200 M0 268 H1200 M0 290 H1200 M0 318 H1200 M0 352 H1200 M0 392 H1200" stroke="#155e75" stroke-width="1" opacity="0.35" fill="none"/>
+<circle cx="600" cy="241" r="4" fill="#d29922" filter="url(#glow2)">
+<animate attributeName="opacity" values="0.6;1;0.6" dur="2.6s" repeatCount="indefinite"/>
+</circle>
+<rect x="-260" y="-90" width="170" height="580" fill="url(#beam)" opacity="0.10" filter="url(#soft)" transform="rotate(14)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="-350 0;1750 0" dur="7s" repeatCount="indefinite"/>
+</rect>
+<rect x="-260" y="-90" width="170" height="580" fill="url(#beam)" opacity="0.07" filter="url(#soft)" transform="rotate(14)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="-350 0;1750 0" dur="7s" begin="-3.4s" repeatCount="indefinite"/>
+</rect>
+<text x="600" y="66" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="13" letter-spacing="6" fill="#d29922" opacity="0.85">MARCUSPAT · HOMEBREW-TAP</text>
+<text x="600" y="152" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="74" font-weight="800" letter-spacing="1" fill="#d29922" opacity="0.55" filter="url(#glow2)">homebrew-tap</text>
+<text x="600" y="152" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="74" font-weight="800" letter-spacing="1" fill="url(#tgrad)">homebrew-tap</text>
+<text x="600" y="198" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="19" letter-spacing="0.4" fill="#a8b3c4">Homebrew tap for the marcuspat / adventurewave-labs CLI fleet —</text>
+<text x="600" y="224" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="19" letter-spacing="0.4" fill="#a8b3c4">10 formulae: codescope, sentinel, netrain, secretscan, and friends.</text>
+
+<g transform="translate(600,308)">
+
+<rect x="-470" y="-78" width="520" height="150" rx="14" fill="#0d0a06" stroke="#33280f"/>
+<line x1="-470" y1="-52" x2="50" y2="-52" stroke="#241c0c"/>
+<circle cx="-446" cy="-65" r="5" fill="#f85149"/><circle cx="-428" cy="-65" r="5" fill="#d29922"/><circle cx="-410" cy="-65" r="5" fill="#3fb950"/>
+<text x="-388" y="-60" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="13" fill="#6e7681">tap — install log</text>
+<g font-family="ui-monospace,Menlo,Consolas,monospace" font-size="15">
+<text x="-440" y="-22" fill="#d29922">$ brew install marcuspat/tap/codescope</text>
+<text x="-440" y="8" fill="#3fb950" opacity="0">✓ poured — single binary, no compile<animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.3" dur="6s" repeatCount="indefinite"/></text>
+<text x="-440" y="38" fill="#3fb950" opacity="0">✓ 10 formulae in the fleet<animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.55" dur="6s" repeatCount="indefinite"/></text>
+<text x="-440" y="62" fill="#c9d1d9" opacity="0">$ ▮<animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.8" dur="6s" repeatCount="indefinite"/></text>
+</g>
+<line x1="120" y1="52" x2="470" y2="52" stroke="#3a2f14" stroke-width="2" stroke-dasharray="8 8"><animate attributeName="stroke-dashoffset" values="0;-32" dur="1.2s" repeatCount="indefinite"/></line>
+<g><g><animateTransform attributeName="transform" type="translate" values="0 0;-418 0" dur="5s" repeatCount="indefinite"/><g><rect x="130" y="18" width="16" height="30" rx="5" fill="#d29922"/><rect x="134" y="10" width="8" height="10" rx="2" fill="#d29922"/></g><g><rect x="168" y="18" width="16" height="30" rx="5" fill="#3a2f14"/><rect x="172" y="10" width="8" height="10" rx="2" fill="#3a2f14"/></g><g><rect x="206" y="18" width="16" height="30" rx="5" fill="#3a2f14"/><rect x="210" y="10" width="8" height="10" rx="2" fill="#3a2f14"/></g><g><rect x="244" y="18" width="16" height="30" rx="5" fill="#3a2f14"/><rect x="248" y="10" width="8" height="10" rx="2" fill="#3a2f14"/></g><g><rect x="282" y="18" width="16" height="30" rx="5" fill="#3a2f14"/><rect x="286" y="10" width="8" height="10" rx="2" fill="#3a2f14"/></g><g><rect x="320" y="18" width="16" height="30" rx="5" fill="#d29922"/><rect x="324" y="10" width="8" height="10" rx="2" fill="#d29922"/></g><g><rect x="358" y="18" width="16" height="30" rx="5" fill="#3a2f14"/><rect x="362" y="10" width="8" height="10" rx="2" fill="#3a2f14"/></g><g><rect x="396" y="18" width="16" height="30" rx="5" fill="#3a2f14"/><rect x="400" y="10" width="8" height="10" rx="2" fill="#3a2f14"/></g><g><rect x="434" y="18" width="16" height="30" rx="5" fill="#3a2f14"/><rect x="438" y="10" width="8" height="10" rx="2" fill="#3a2f14"/></g><g><rect x="472" y="18" width="16" height="30" rx="5" fill="#3a2f14"/><rect x="476" y="10" width="8" height="10" rx="2" fill="#3a2f14"/></g><g><rect x="510" y="18" width="16" height="30" rx="5" fill="#d29922"/><rect x="514" y="10" width="8" height="10" rx="2" fill="#d29922"/></g></g></g>
+<g><rect x="255" y="-66" width="80" height="26" rx="13" fill="none" stroke="#d29922" stroke-width="2" filter="url(#glow)"/>
+<text x="295" y="-48" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="13" fill="#d29922" text-anchor="middle">10 formulae</text>
+<animate attributeName="opacity" values="1;0.55;1" dur="2.4s" repeatCount="indefinite"/></g>
+
+</g>
+</svg>

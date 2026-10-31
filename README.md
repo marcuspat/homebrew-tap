@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.svg" alt="homebrew-tap — animated banner" width="100%"></p>
+
 # marcuspat/homebrew-tap
 
 Homebrew tap for the marcuspat / adventurewave-labs CLI fleet — 10 formulae.
