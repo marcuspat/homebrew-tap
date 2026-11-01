@@ -5,23 +5,23 @@ class Codescope < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/adventurewave-labs/codescope/releases/download/v0.3.0/codescope-v0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "a1f6f9bbdc47647c804ecd0080dc2f60a48eef846e5edf18632b39bd5d7f59b0"
+      url "https://github.com/adventurewave-labs/codescope/releases/download/v0.3.1/codescope-aarch64-apple-darwin.tar.gz"
+      sha256 "29e73c5dd6ee774bbfc06201ab01cd7017d242be78c3ebaa0e4456f69db92b4a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/adventurewave-labs/codescope/releases/download/v0.3.0/codescope-v0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "d9de121b741714a9a64b3d814e0ed4f97758c333b3bd6a5763fd40e086346f4e"
+      url "https://github.com/adventurewave-labs/codescope/releases/download/v0.3.1/codescope-x86_64-apple-darwin.tar.gz"
+      sha256 "7f9300ab783c470944f3fc46e1ba1c00d417739fa573f3b59345740d992fee86"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/adventurewave-labs/codescope/releases/download/v0.3.0/codescope-v0.3.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "a31aaadb4791fd72d9916ab508efaee6012789e0dd0f7ba9d3a79b59379135f0"
+      url "https://github.com/adventurewave-labs/codescope/releases/download/v0.3.1/codescope-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "161e2a4a23942975a4586dc1a889ea40c726559a962b3c0f93a26ff50f897552"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/adventurewave-labs/codescope/releases/download/v0.3.0/codescope-v0.3.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "e77981adea575dea93de9bc359f3895738d613c092583198f7f8c6938bfb3959"
+      url "https://github.com/adventurewave-labs/codescope/releases/download/v0.3.1/codescope-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "8c3811c43c0fff86c027bd1401ce256b6a4f14f1ecb523b5007230fe18a9cb82"
     end
   end
 
