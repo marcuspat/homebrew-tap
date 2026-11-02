@@ -2,7 +2,6 @@ class Codescope < Formula
   desc "Single-binary code intelligence for AI coding agents (MCP / CLI / JSON)"
   homepage "https://github.com/adventurewave-labs/codescope"
   license any_of: ["MIT", "Apache-2.0"]
-  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.arm?
