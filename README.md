@@ -15,7 +15,7 @@ brew install marcuspat/tap/<name>
 | `codescope` | Single-binary code intelligence for AI coding agents (MCP/CLI/JSON) | Prebuilt release binaries (fast, no compile) |
 | `sentinel` | Safe agentic system administration: policy-gated terminal UI and CLI | Git tag v0.2.1 (compiles on install) |
 | `turbo-flow-wizard` | Interactive CLAUDE.md setup wizard | Single script |
-| `netrain` | Matrix-style network packet monitor with threat detection | crates.io 0.2.10 |
+| `netrain` | Matrix-style network packet monitor with threat detection | crates.io 1.0.1 |
 | `secretscan` | Rust secret scanner CLI (50 patterns, entropy, obfuscation) | crates.io 0.2.5 |
 | `cargocrypt` | Zero-config file encryption for Rust projects | crates.io 0.3.0 |
 | `k8s-netinspect` | Kubernetes CNI / pod connectivity inspection | crates.io 0.2.1 |
