@@ -1,4 +1,4 @@
-name: Verify NetRain Homebrew install
+name: Verify live NetRain Homebrew install
 on:
   push:
     branches: [verify/netrain-1.0.1]
@@ -9,12 +9,19 @@ jobs:
     runs-on: macos-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - name: Install the candidate formula and test the installed binary
-        env:
-          HOMEBREW_NO_AUTO_UPDATE: "1"
+      - name: Install NetRain from the live tap and verify its version
+        shell: bash
         run: |
-          brew tap marcuspat/tap "$GITHUB_WORKSPACE"
-          brew install --build-from-source marcuspat/tap/netrain
+          set -euo pipefail
+          brew install marcuspat/tap/netrain
+          tap_dir="$(brew --repo marcuspat/tap)"
+          tap_origin="$(git -C "$tap_dir" remote get-url origin)"
+          tap_commit="$(git -C "$tap_dir" rev-parse HEAD)"
+          printf 'Tap origin %s\nTap commit %s\n' "$tap_origin" "$tap_commit"
+          test "$tap_origin" = 'https://github.com/marcuspat/homebrew-tap'
+          test "$tap_commit" = 'b49b9e5819a895b33f0a944d2449388bef272185'
+          brew list --versions marcuspat/tap/netrain
+          installed_version="$("$(brew --prefix marcuspat/tap/netrain)/bin/netrain" --version)"
+          printf '%s\n' "$installed_version"
+          test "$installed_version" = 'netrain 1.0.1'
           brew test marcuspat/tap/netrain
-          test "$(netrain --version)" = 'netrain 1.0.1'
