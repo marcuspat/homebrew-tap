@@ -1,0 +1,20 @@
+name: Verify NetRain Homebrew install
+on:
+  push:
+    branches: [verify/netrain-1.0.1]
+permissions:
+  contents: read
+jobs:
+  install:
+    runs-on: macos-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install the candidate formula and test the installed binary
+        env:
+          HOMEBREW_NO_AUTO_UPDATE: "1"
+        run: |
+          brew tap marcuspat/tap "$GITHUB_WORKSPACE"
+          brew install --build-from-source marcuspat/tap/netrain
+          brew test marcuspat/tap/netrain
+          test "$(netrain --version)" = 'netrain 1.0.1'
