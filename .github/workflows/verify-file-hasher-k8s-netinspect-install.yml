@@ -1,0 +1,27 @@
+name: Verify File Hasher and K8s NetInspect Homebrew installs
+on:
+  push:
+    branches: [verify/file-hasher-k8s-netinspect-1.0.0]
+permissions:
+  contents: read
+jobs:
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        formula: [file-hasher, k8s-netinspect]
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install the candidate formula and test the installed binary
+        env:
+          FORMULA: ${{ matrix.formula }}
+          HOMEBREW_NO_AUTO_UPDATE: "1"
+        run: |
+          brew tap marcuspat/tap "$GITHUB_WORKSPACE"
+          brew install --build-from-source "marcuspat/tap/$FORMULA"
+          brew test "marcuspat/tap/$FORMULA"
+          installed_version="$("$(brew --prefix "marcuspat/tap/$FORMULA")/bin/$FORMULA" --version)"
+          printf '%s\n' "$installed_version"
+          test "$installed_version" = "$FORMULA 1.0.0"
