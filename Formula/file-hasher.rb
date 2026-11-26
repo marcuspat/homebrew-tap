@@ -1,8 +1,8 @@
 class FileHasher < Formula
   desc "CLI for SHA256, SHA1 and MD5 file hashes with verify and streaming"
   homepage "https://github.com/marcuspat/file-hasher"
-  url "https://static.crates.io/crates/file-hasher/file-hasher-0.1.2.crate"
-  sha256 "a60181d4dcd746120ab462cc9ec080ef7cce61eb2f2997267665a612d36e6162"
+  url "https://static.crates.io/crates/file-hasher/file-hasher-1.0.0.crate"
+  sha256 "88c60adfca8e37761de1400def7f140461b15ce8a215bbc608da6e1802006de3"
   license "MIT"
 
   depends_on "rust" => :build
